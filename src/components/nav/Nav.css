@@ -1,0 +1,33 @@
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-left h3{
+    color: #4A5D73;
+    font-size: 1.5rem;
+    font-display: block;
+    text-transform: uppercase;
+}
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40%;
+    gap: 16px;
+}
+.nav-right p{
+    text-decoration: wavy;
+    text-transform: capitalize;
+    text-overflow: clip;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: bold;
+    font-style: normal;
+}
+.nav-right p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    text-underline-offset: 8px;
+    text-decoration-color: #4A5D73;
+    text-decoration-thickness: 2px;
+    text-decoration-style: solid;
+}
