@@ -1,12 +1,11 @@
 import React from 'react'
-import './Nav.css'
-import Home from '../home/Home'
+import '../nav/Nav.css'
 import {Link} from 'react-router-dom'
 
-function Nav() {
+function MoodTracker() {
   return (
     <div>
-    <div className='nav'>
+        <div className='nav'>
       <div className='nav-left'>
         <h3>Mindease</h3>
       </div>
@@ -17,9 +16,11 @@ function Nav() {
         <Link to={"/sign-in"}><p >Sign in </p></Link>
     </div>
     </div><br/><br/>
-    <Home/>
+        <div>
+            Mood Tracker
+        </div>
     </div>
   )
 }
 
-export default Nav
+export default MoodTracker

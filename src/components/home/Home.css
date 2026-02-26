@@ -11,7 +11,7 @@ img{
     border-radius: 20px;
     border-color: black;
 }
-button{
+.get-started{
     background-color: #D64A6A;
     color: white;
     font-size: 1rem;
@@ -27,7 +27,7 @@ p{
     font-size: 1rem;
     color: #4A5D73;
 }
-button:hover{
+.get-started:hover{
     background-color: white;
     color: #D64A6A;
     cursor: pointer;

@@ -1,0 +1,41 @@
+.Form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 2%;
+}
+.Form input{
+    width: 25%;
+    padding: 1%;
+    color: black;
+    font-size: medium;
+    border: none;
+    border-bottom:2px solid #D64A6A;
+    text-align: left;
+}
+.Form input:hover{
+    cursor : pointer;
+}
+.Form input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #D64A6A;
+}
+.sign-in{
+    background-color: #D64A6A;
+    width: 25%;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 2%;
+    border: none;
+}
+.sign-in:hover{
+    background-color: white;
+    color: #D64A6A;
+    cursor: pointer;
+    border-color: black;
+}
