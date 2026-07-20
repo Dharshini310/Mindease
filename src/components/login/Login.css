@@ -8,9 +8,6 @@
     margin-top: 10px;
     width: 100%;
 }
-.Login{
-    cursor: pointer;
-}
 
 /* Input Fields */
 .Form input {
@@ -35,7 +32,7 @@
 }
 
 /* Button */
-.sign-in {
+.login {
     width: 100%;
     max-width: 280px;
     background-color: #450920;
@@ -47,7 +44,7 @@
     transition: 0.3s ease;
 }
 
-.sign-in:hover {
+.login:hover {
     background-color: white;
     color: #450920;
     cursor: pointer;

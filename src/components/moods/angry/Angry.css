@@ -1,0 +1,18 @@
+.angry-back-to-mood-tracker{
+    background-color: #450920;
+    width: 15%;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 1%;
+    border: none;
+}
+.angry-back-to-mood-tracker:hover{
+    background-color: white;
+    color: #450920;
+    cursor: pointer;
+    border: 2px solid #450920;
+}
+.user-input h3{
+    color: #450920;
+}

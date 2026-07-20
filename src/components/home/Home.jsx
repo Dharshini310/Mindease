@@ -1,16 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Home.css'
-import { Link } from 'react-router-dom'
+
+import SignIn from '../sign-in/SignIn'
+import Login from '../login/Login';
 
 function Home() {
+  const [isSignUpModal,setIsSignUpModal] = useState(false);
+  const [isLoginOpenModal,setIsLoginOpenModal] = useState(false)
   return (
     <div className='main'>
         <div>
             <h1>Your Mind <br/><br/> Deserves <br/><br/> Peace</h1>
             <p>Breathe - Relax . Reconnect with yourself guided meditation</p><br/>
-            <Link to="/sign-in">
-                <button className='get-started'>Get Started For Free</button>
-            </Link>
+            
+                <button className='get-started' onClick={() => {setIsSignUpModal(true)}}>Get Started For Free</button>
+            
         </div>
         <div>
             <img 
@@ -18,6 +22,20 @@ function Home() {
               alt="Meditation" 
             />
         </div>
+        <SignIn
+        signupcloseModal={() => {
+            setIsSignUpModal(false)
+          }} 
+          isSignUpOpen={isSignUpModal}
+          isLoginOpenModal={isLoginOpenModal}
+          setIsLoginOpenModal={setIsLoginOpenModal}
+        />
+          <Login
+          logincloseModal={()=>{
+            setIsLoginOpenModal(false)
+          }}
+          isloginOpen={isLoginOpenModal}
+          />
     </div>
   )
 }

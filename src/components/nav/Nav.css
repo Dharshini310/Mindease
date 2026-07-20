@@ -1,37 +1,75 @@
+/* Navbar container */
 .nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding: 18px 8%;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
+
+/* Logo */
 .nav-left h3{
-    color: #4A5D73;
-    font-size: 1.5rem;
-    font-display: block;
+    color: #a53860;
+    font-size: 24px;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
+
+/* Right menu */
 .nav-right{
     display: flex;
-    flex-direction: row;
-    margin-left: 40%;
-    gap: 16px;
+    gap: 30px;
+    align-items: center;
 }
-.nav-right p{
-    text-decoration: wavy;
-    text-transform: capitalize;
-    text-overflow: clip;
-    font-size: 1.1rem;
-    color: black;
-    font-weight: bold;
-    font-style: normal;
-}
+
+/* Links */
 .nav-right a{
     text-decoration: none;
 }
+
+/* Menu text */
+.nav-right p{
+    font-size: 20px;
+    color: #da627d;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Hover underline animation */
+.nav-right p::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -6px;
+    background-color: #a53860;
+    transition: 0.3s;
+}
+
+.nav-right p:hover::after{
+    width: 100%;
+}
+
 .nav-right p:hover{
-    text-decoration: underline;
+    color: #a53860;
     cursor: pointer;
-    text-underline-offset: 8px;
-    text-decoration-color: #4A5D73;
-    text-decoration-thickness: 2px;
-    text-decoration-style: solid;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px){
+
+    .nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-right{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
 }

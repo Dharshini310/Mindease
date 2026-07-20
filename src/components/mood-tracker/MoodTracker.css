@@ -1,0 +1,112 @@
+/* Parent container */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+/* Card container */
+.card-main {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.card-main a {
+    text-decoration: none;
+}
+/* User Card Container */
+.user-card-main {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.user-card-main a {
+    text-decoration: none;
+}
+/* Common card style */
+.happy,
+.sad,
+.angry {
+    background-color: #450920;
+    border: 2px solid #da627d;
+    color: #f9dbbd;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+/* User Card Style */
+.user-happy,
+.user-sad,
+.user-angry {
+    background-color: #da627d;
+    border: 2px solid #450920;
+    color: #351849;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.happy:hover,
+.sad:hover,
+.angry:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    background-color: #5c0f2a;
+}
+.user-happy:hover,
+.user-sad:hover,
+.user-angry:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    background-color: #ee7d95;
+}
+/* Icon style */
+.material-symbols-outlined {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+/* Text style */
+.happy h3,
+.sad h3,
+.angry h3 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .card-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .happy,
+    .sad,
+    .angry {
+        width: 220px;
+        height: 180px;
+    }
+}

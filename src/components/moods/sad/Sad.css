@@ -1,0 +1,62 @@
+.sad-back-to-mood-tracker{
+    background-color: #450920;
+    width: 15%;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 1%;
+    border: none;
+}
+.sad-back-to-mood-tracker:hover{
+    background-color: white;
+    color: #450920;
+    cursor: pointer;
+    border: 2px solid #450920;
+}
+.user-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.user-sad-form{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 2%;
+}
+.user-sad-form input{
+    width: 100%;
+    padding: 4%;
+    color: black;
+    font-size: medium;
+    border: none;
+    border-bottom:2px solid #450920;
+    text-align: left;
+}
+.user-sad-form input:hover{
+    cursor : pointer;
+}
+.user-sad-form input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #450920;
+}
+.user-sad-form button{
+    background-color: #450920;
+    width: 35%;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 5%;
+    border: none;
+}
+.user-sad-form button:hover{
+    background-color: white;
+    color: #450920;
+    cursor: pointer;
+    border: 2px solid #450920;
+}

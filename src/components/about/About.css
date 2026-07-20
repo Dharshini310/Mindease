@@ -1,51 +1,118 @@
+/* Main container */
 .About-main {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.about-mindease {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FBAED2;
-  padding: 40px 20px;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 8%;
+  color: #f9dbbd;
+}
+/*Main Container User*/
+.About-main-user {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 8%;
+  color: #E8E6E6;
 }
 
+/* Common section style */
+.about-mindease,
+.our-mission,
+.what,
+.why {
+  background-color: #450920;
+  border: 2px solid #da627d;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  transition: 0.3s;
+}
+/*user about page*/
+.about-mindease-user,
+.our-mission-user,
+.what-user,
+.why-user {
+  background-color: #E13A57;
+  border: 2px solid #da627d;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  transition: 0.3s;
+  
+}
+.about-mindease-user h1,.our-mission-user h1,.what-user h1, .why-user h1{
+  color: #351849;
+}
+
+/* Hover effect */
+.about-mindease:hover,
+.our-mission:hover,
+.what:hover,
+.why:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+/*hover effects for user about*/
+.about-mindease-user:hover,
+.our-mission-user:hover,
+.what-user:hover,
+.why-user:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+/* Headings */
 .about-mindease h1,
 .our-mission h1,
 .what h1,
 .why h1 {
-  color: #F3E8FF;
-  -webkit-text-stroke: 1px #A78BFA;
+  margin-bottom: 15px;
+  font-size: 32px;
+  color: #f9dbbd;
 }
 
-.our-mission {
-  background-color: #DB7093;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
+/* Paragraph / section text */
+section {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #f9dbbd;
 }
 
-.what {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FBAED2;
-  padding: 40px 20px;
+/* What we offer items */
+.what div {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #5c0f2a;
 }
 
+/* Feature headings */
 .what h3 {
-  color: brown;
+  color: #ffa5ab;
+  margin-bottom: 6px;
 }
 
-.why {
-  background-color: #DB7093;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 40px 20px;
+/* Why section line spacing */
+.why section {
+  line-height: 2;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .About-main {
+    padding: 30px 5%;
+  }
+
+  .about-mindease,
+  .our-mission,
+  .what,
+  .why {
+    padding: 25px;
+  }
+
+  .about-mindease h1,
+  .our-mission h1,
+  .what h1,
+  .why h1 {
+    font-size: 26px;
+  }
 }
