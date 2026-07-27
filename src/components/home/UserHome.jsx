@@ -16,6 +16,10 @@ function UserHome() {
 
   }, [])
 
+  const handleTrackMyMood = () => {
+    navigate('/user-mood-tracker')
+  }
+
   return (
     <>
     <div className='main-content'>
@@ -25,7 +29,7 @@ function UserHome() {
         <p>MindEase is here to help you slow down,<br/>
           reflect, and reconnect with yourself.</p>
           <button>Begin Meditation</button><br/>
-          <button>Track My Mood</button>
+          <button onClick={handleTrackMyMood}>Track My Mood</button>
       </div>
       <div>
         <img src={yoga} alt='loading..' className='yoga'/>

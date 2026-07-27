@@ -28,7 +28,7 @@ function UserAbout() {
         <Link to={"/user-nav"} className='home'><p >Home</p></Link>
         <Link to={"/user-about"} className='about'><p >About</p></Link>
         <Link to={"/user-mood-tracker"} className='mood-tracker'><p >Mood Tracker</p></Link>
-        <p>{name}</p>
+        <Link to={"/user-profile"} className='user-profile'><p>{name}</p></Link>
         <p
     onClick={() => {
 

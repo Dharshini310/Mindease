@@ -12,6 +12,10 @@ import Happy from './components/moods/happy/Happy'
 import UserNav from './components/nav/UserNav'
 import UserAbout from './components/about/UserAbout'
 import UserMoodTracker from './components/mood-tracker/UserMoodTracker'
+import UserHappy from './components/moods/happy/UserHappy'
+import UserSad from './components/moods/sad/UserSad'
+import UserAngry from './components/moods/angry/UserAngry'
+import UserProfile from './components/home/UserProfile'
 
 function App() {
   return (
@@ -28,6 +32,10 @@ function App() {
           <Route path='/sad' element={<Sad/>}/>
           <Route path='/angry' element={<Angry/>}/>
           <Route path='/happy' element={<Happy/>}/>
+          <Route path='/user-happy' element={<UserHappy/>}/>
+          <Route path='/user-sad' element={<UserSad/>}/>
+          <Route path='/user-angry' element={<UserAngry/>}/>
+          <Route path='/user-profile' element={<UserProfile/>}/>
         </Routes>
         </BrowserRouter>
         <ToastContainer position='bottom-right'/>
